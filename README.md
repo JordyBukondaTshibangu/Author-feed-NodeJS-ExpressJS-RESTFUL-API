@@ -18,6 +18,7 @@ Simple RESTFUL API created using Node.JS, Express.JS and MongoDB.
 * MongoDB
 
 ## Perequisite
+
 Before launching this project you must ensure that you have MongoDB installed locally
 Bellow are the links to help you installing it:
 
@@ -27,8 +28,8 @@ Bellow are the links to help you installing it:
 
 ## Launch
 
-*  git clone 
-* cd 
+*  git clone git@github.com:JordyBukondaTshibangu/AUTHOR-FEED-NODEJS-EXPRESS-RESTFUL-API-.git
+* cd AUTHOR-FEED-NODEJS-EXPRESS-RESTFUL-API-
 * npm install 
 * npm run dev
 
