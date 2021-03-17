@@ -53,8 +53,7 @@ In the server we import
     5.  bcrypt ( for password encryption)
 
 
-- [x] Database  => Database
-
+- [x] Database  => Database:
 
     * Import mongoose 
     * Create a connection url
