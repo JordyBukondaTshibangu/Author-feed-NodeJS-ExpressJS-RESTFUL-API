@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const url = 'mongodb+srv://ShopApp:SHOPAPP@shopapp-hodya.mongodb.net/MessageNode?retryWrites=true&w=majority';
+// const url = 'mongodb+srv://ShopApp:SHOPAPP@shopapp-hodya.mongodb.net/MessageNode?retryWrites=true&w=majority';
 const newUrl = 'mongodb://localhost:27017/AuthFeed'
 
 mongoose.connect(newUrl, {useNewUrlParser : true,  useUnifiedTopology: true });
