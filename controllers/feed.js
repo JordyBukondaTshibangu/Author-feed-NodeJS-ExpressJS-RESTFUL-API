@@ -7,7 +7,7 @@ const User = require('../models/user');
 
 
 exports.getPosts = async (req, res, next) => {
- console.log('hello')
+
   const currentPage = req.query.page || 1
   const perPage = 2;
   let totalItems
@@ -41,7 +41,9 @@ exports.createPost = async (req, res, next) => {
     error.statusCode = 422;
     throw error;
   }
+
   const imageUrl = req.file.path;
+
   const title = req.body.title;
   const content = req.body.content;
   let creator
@@ -104,13 +106,14 @@ exports.updatePost = async (req, res, next) => {
     error.statusCode = 422;
     throw error;
   }
- 
+  console.log(req.file)
   const title = req.body.title
   const content = req.body.content
   let imageUrl = req.body.image
   if(req.file){
     imageUrl = req.file.path
   }
+  
   if(!imageUrl){
     const error = new Error('No file picked')
     error.statusCode = 422
